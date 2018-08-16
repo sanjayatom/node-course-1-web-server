@@ -22,10 +22,12 @@ app.use((req, res, next) => {
     });
     next();
 });
+
 // Uncomment below for maintanence mode
 // app.use((req, res, next) => {
 //     res.render('maintanence');
 // });
+
 // express middleware setting for static resource folder
 app.use(express.static(__dirname + '/public'));
 
