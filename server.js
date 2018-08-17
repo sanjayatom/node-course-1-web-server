@@ -53,6 +53,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs',{
+        pageTitle: 'My Portfolio',
+        myProjects: 'NodeJs, C#, Python'
+    })
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'request could not be fulfilled.'
